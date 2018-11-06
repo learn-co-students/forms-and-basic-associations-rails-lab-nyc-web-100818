@@ -159,4 +159,13 @@ genres = Hash[[
   "Synthpop"
 ].map { |genre| [genre, Genre.find_or_create_by(name: genre)] }]
 
+Artist.create(name: "Bobby Brown")
+Artist.create(name: "Doom")
+Artist.create(name: "Garbage Trump")
+Artist.create(name: "Jimi")
 
+Song.create(title: "I am a lonely person", artist_id: 2, genre_id: 6)
+
+Song.create(title: "Running on fumes", artist_id: 1, genre_id: 12)
+
+Song.create(title: "RARGH", artist_id: 3, genre_id: 2)
