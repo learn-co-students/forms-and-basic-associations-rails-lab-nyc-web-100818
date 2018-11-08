@@ -1,4 +1,9 @@
 class ArtistsController < ApplicationController
+  before_action :find_artist, only: [:show, :new, :create]
+
+
+
+
   def index
     @artists = Artist.all
   end
